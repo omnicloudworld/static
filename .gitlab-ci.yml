@@ -1,0 +1,18 @@
+stages:
+    -   copy
+
+
+copy2gcs:
+    stage:  copy
+    image:  google/cloud-sdk:latest
+    environment:
+        name:   GCloud/FRONT
+    only:
+        refs:
+            -   main
+
+    script:
+        -   gcloud auth activate-service-account --key-file=$GCLOUD_PIPELINE_KEY_FRONT
+        -   gcloud config set project $GCLOUD_PROJECT_FRONT
+        -   gsutil -m rm -r gs://$STATIC_BUCKET/common/* || true;
+        -   gsutil -m cp -r src/** gs://$STATIC_BUCKET/common
