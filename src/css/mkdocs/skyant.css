@@ -19,11 +19,11 @@ h0.doc-heading {
 }
 
 .md-header__inner .md-logo {
-    margin: 0px;
-    padding: 0px;
+    margin: 0px !important;
+    padding: 0px !important;
 }
 
 .md-header__inner .md-logo > img {
-    height: 42px;
-    width: 42px;
+    height: 42px !important;
+    width: 42px !important;
 }
