@@ -30,9 +30,13 @@ h0.doc-heading {
 
 footer.md-footer div.md-footer-meta {
     background-color: #313b50;
-    box-shadow: 0px -1px 5px 0px #fcc107;
+    box-shadow: 0px 0px 15px 0px #fcc107;
 }
 
 footer.md-footer, footer.md-footer nav {
     background-color: #313b50;
+}
+
+footer.md-footer nav {
+    margin-bottom: 12px;
 }
