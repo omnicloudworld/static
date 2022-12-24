@@ -27,3 +27,12 @@ h0.doc-heading {
     height: 42px !important;
     width: 42px !important;
 }
+
+footer.md-footer div.md-footer {
+    background-color: #313b50;
+    box-shadow: 0px -1px 5px 0px #fcc107;
+}
+
+footer.md-footer, footer.md-footer nav {
+    background-color: #313b50;
+}
