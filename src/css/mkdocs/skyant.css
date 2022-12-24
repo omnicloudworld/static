@@ -28,7 +28,7 @@ h0.doc-heading {
     width: 42px !important;
 }
 
-footer.md-footer div.md-footer {
+footer.md-footer div.md-footer-meta {
     background-color: #313b50;
     box-shadow: 0px -1px 5px 0px #fcc107;
 }
